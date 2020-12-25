@@ -2,7 +2,30 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	
+	char y = x;
+
+	if(y == 'A'){
+			y = 'Z';
+			return y;
+	}
+	
+	if(y >= 'A' && y <= 'Z' ){
+		return y-1;
+	}else{
+		return '0';
+	}
+    
+	
+	
+
+	
+	
+
+
+    
+	
+
 }
 
 int main(){
@@ -17,3 +40,4 @@ int main(){
 	cout << before('c') << "\n";
 	return 0;
 }
+
